@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true, // Enable SWC minification
+  swcMinify: true,
+  // Explicitly disable experimental features that might be causing issues
   experimental: {
-    // Configure SWC properly
-    swcTraceProfiling: false,
-    forceSwcTransforms: true
+    // Disable any experimental features that might be enabled by default
   },
   eslint: {
     ignoreDuringBuilds: true,
@@ -16,11 +15,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Use transpilePackages to ensure compatibility
-  transpilePackages: [
-    "lucide-react",
-    "react-day-picker"
-  ]
 }
 
 export default nextConfig
