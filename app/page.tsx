@@ -97,7 +97,7 @@ export default function Home() {
                 <div className="flex gap-4">
                   <AnimatedButton
                     variant="secondary"
-                    onClick={() => window.open("https://discord.gg/your-invite", "_blank")}
+                    onClick={() => window.open("https://discord.com/invite/Dk7C6kBJ2C", "_blank")}
                   >
                     <span className="flex items-center gap-2">
                       Join Our Server
@@ -108,7 +108,7 @@ export default function Home() {
                     variant="primary"
                     onClick={() =>
                       window.open(
-                        "https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&permissions=8&scope=bot%20applications.commands",
+                        "https://discord.com/oauth2/authorize?client_id=904776099848917055&permissions=8&integration_type=0&scope=bot",
                         "_blank",
                       )
                     }
@@ -433,7 +433,7 @@ export default function Home() {
               </p>
               <AnimatedButton
                 variant="secondary"
-                onClick={() => window.open("https://discord.gg/your-invite", "_blank")}
+                onClick={() => window.open("https://discord.com/invite/Dk7C6kBJ2C", "_blank")}
               >
                 <span className="flex items-center gap-2">
                   Join Now
