@@ -1,5 +1,6 @@
 "use client"
 
+import Head from "next/head" // Import Head for meta tags
 import type React from "react"
 import Link from "next/link"
 import Header from "../components/header"
@@ -69,6 +70,14 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <Head>
+        <title>Discord Justice System</title>
+        <meta name="description" content="Protecting communities and fighting scammers with the power of justice!" />
+        <meta property="og:title" content="Discord Justice System" />
+        <meta property="og:description" content="Join our community dedicated to making Discord a safer place!" />
+        <meta property="og:image" content="https://media.discordapp.net/attachments/1125410470384373770/1372943583669391511/Group_2.png?ex=68289cda&is=68274b5a&hm=f4e33237c7523b7b928e7c9b022a604cddf6e7f340d26e4900f65e3c7b2de764&=&format=webp&quality=lossless&width=909&height=569" /> {/* Replace with your image path */}
+        <meta property="og:url" content="https://yourwebsite.com" />
+      </Head>
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
