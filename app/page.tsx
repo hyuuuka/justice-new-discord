@@ -29,7 +29,7 @@ const latestBlogPosts = [
     title: "The Rise of Discord Scams and How to Combat Them",
     excerpt:
       "An in-depth look at the increasing prevalence of scams on Discord and effective strategies to combat them.",
-    date: "March 25, 2023",
+    date: "March 5, 2025",
     readTime: "8 min read",
     image: "/placeholder.svg?height=400&width=600",
     slug: "rise-of-discord-scams",
@@ -60,14 +60,11 @@ export default function Home() {
   const justiceWords = [
     "Justice",
     "Fairness",
-    "Integrity",
     "Protection",
     "Security",
     "Equality",
-    "Order",
     "Defense",
     "Guardian",
-    "Shield",
   ]
 
   return (
