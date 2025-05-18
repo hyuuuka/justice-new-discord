@@ -1,8 +1,8 @@
 "use client"
 
-import Head from "next/head" // Import Head for meta tags
 import type React from "react"
 import Link from "next/link"
+import Head from "next/head" // Keep the Head import here for direct use
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { AnimatedButton } from "../components/animated-button"
@@ -73,10 +73,26 @@ export default function Home() {
       <Head>
         <title>Discord Justice System</title>
         <meta name="description" content="Protecting communities and fighting scammers with the power of justice!" />
+        
+        {/* Open Graph / Discord Embed Metadata */}
         <meta property="og:title" content="Discord Justice System" />
         <meta property="og:description" content="Join our community dedicated to making Discord a safer place!" />
-        <meta property="og:image" content="https://media.discordapp.net/attachments/1125410470384373770/1372943583669391511/Group_2.png?ex=68289cda&is=68274b5a&hm=f4e33237c7523b7b928e7c9b022a604cddf6e7f340d26e4900f65e3c7b2de764&=&format=webp&quality=lossless&width=909&height=569" /> {/* Replace with your image path */}
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourwebsite.com" />
+        
+        {/* Use an absolute URL for the image - Replace with your actual hosted image */}
+        <meta property="og:image" content="https://yourwebsite.com/images/discord-justice.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter Card (also used by some platforms) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Discord Justice System" />
+        <meta name="twitter:description" content="Join our community dedicated to making Discord a safer place!" />
+        <meta name="twitter:image" content="https://yourwebsite.com/images/discord-justice.png" />
+        
+        {/* Discord-specific meta tags */}
+        <meta name="theme-color" content="#4752c4" />
       </Head>
       <Header />
       <main className="flex-grow">
